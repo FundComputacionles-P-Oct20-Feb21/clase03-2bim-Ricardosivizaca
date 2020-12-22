@@ -7,32 +7,41 @@
 7.      valorLimite <-- 10 
 8.      mensajeFinal <-- obtenerTabla(tabla, valorLimite)
 9.      Escribir mensajeFinal 
-10.  fin funcion principal 
-11.  
-11. // función para multiplicar
-12.  funcion obtenerTablaMultiplicar(tabla, i; limite, i) : x 
-13.     contador, i[0-n] <-- 1
-14.     operacion, i[0-n]
-15.     mensaje, x(200)[{a-b}, {BS}, {*, =}] <-- ""
-16.     Mientras(contador<=limite) entonces
-17.       operacion <-- tabla * contador
-18.       mensaje <-- mensaje + tabla + " * " + contador " = " + operacion "\n"
-19.       contador <-- contador + 1
-20.     Fin Mientras
-21.     retorna mensaje
-22.  fin funcion obtenerTablaMultiplicar
-12.
-21.  // función para sumar
-12.  funcion obtenerTablaSuma(tabla, i; limite, i) : x 
-13.     contador, i[0-n] <-- 1
-14.     operacion, i[0-n]
-15.     mensaje, x(200)[{a-b}, {BS}, {+, =}] <-- ""
-16.     Mientras(contador<=limite) entonces
-17.       operacion <-- tabla + contador
-18.       mensaje <-- mensaje + tabla + " + " + contador " = " + operacion "\n"
-19.       contador <-- contador + 1
-20.     Fin Mientras
-21.     retorna mensaje
-22.  fin funcion obtenerTablaSuma
+10.     Escribir"Ingrese si desea realizar la operacion 1 o 2"
+11.     leer operacion
+12.  fin funcion principal 
 
-23. Fin
+
+13.Si (operacion = 1) entonces
+
+14.  
+15. // función para multiplicar
+16.  funcion obtenerTablaMultiplicar(tabla, i; limite, i) : x 
+17.     contador, i[0-n] <-- 1
+18.     operacion, i[0-n]
+19.     mensaje, x(200)[{a-b}, {BS}, {*, =}] <-- ""
+20.     Mientras(contador<=limite) entonces
+21.       operacion <-- tabla * contador
+22.       mensaje <-- mensaje + tabla + " * " + contador " = " + operacion "\n"
+23.       contador <-- contador + 1
+24.     Fin Mientras
+25.     retorna mensaje
+26.  fin funcion obtenerTablaMultiplicar
+
+27.  De lo contrario 
+
+28.  // función para sumar
+29.  funcion obtenerTablaSuma(tabla, i; limite, i) : x 
+30.     contador, i[0-n] <-- 1
+31.     operacion, i[0-n]
+32.     mensaje, x(200)[{a-b}, {BS}, {+, =}] <-- ""
+33.     Mientras(contador<=limite) entonces
+34.       operacion <-- tabla + contador
+35.       mensaje <-- mensaje + tabla + " + " + contador " = " + operacion "\n"
+36.       contador <-- contador + 1
+37.     Fin Mientras
+38.     retorna mensajE
+39.  Fin_si
+40.  fin funcion obtenerTablaSuma
+
+41. Fin
